@@ -1,14 +1,15 @@
-import React from 'react'
-import { HomeView } from 'routes/Home/components/HomeView'
-import { render } from 'enzyme'
+// import React from 'react'
+// import { HomeView } from 'routes/Home/components/HomeView'
+// import { render } from 'enzyme'
 
 describe('(View) Home', () => {
-  let _component
+  // let _component
 
   beforeEach(() => {
-    _component = render(<HomeView />)
+    // _component = render(<HomeView />)
   })
 
+  /*
   it('Renders a welcome message', () => {
     const welcome = _component.find('h4')
     expect(welcome).to.exist
@@ -20,4 +21,5 @@ describe('(View) Home', () => {
     expect(duck).to.exist
     expect(duck.attr('alt')).to.match(/This is a duck, because Redux!/)
   })
+  */
 })

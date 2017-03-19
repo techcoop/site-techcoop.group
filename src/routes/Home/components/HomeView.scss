@@ -1,5 +1,32 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+.mission-card {
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.mission-media {
+  background-image: url("./../assets/16-9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 6.313rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
+  font-weight:200;
+  color:white;
+}
+
+.text-content {
+  margin:8px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.event-card {
+}
+
+.event-media {
+  background-image: url("./../assets/1-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 6.313rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
+  font-weight:200;
 }
