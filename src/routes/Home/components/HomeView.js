@@ -199,16 +199,6 @@ export const HomeView = () => (
 
       </div>
 
-
-
-
-
-
-
-
-
-
-
       <h2 className='mdc-typography--title'>Lively conversations</h2>
       <p className='mdc-typography--body1'>
         Come join our slack channel where all sorts of weird and wonderful things are discussed. We even
@@ -230,7 +220,8 @@ export const HomeView = () => (
 
       <h2 className='mdc-typography--title'>Still not convinced?</h2>
       <p className='mdc-typography--body1'>
-        We encourage you to come to one of the many MeetUps that we attend.  For now, contact gagnon.colin at gmail.com.
+        We encourage you to come to one of the many MeetUps that we attend.  For now, contact
+        gagnon.colin at gmail.com to find out when the next event we will be at.
       </p>
 
     </div>
@@ -242,13 +233,12 @@ export const HomeView = () => (
 )
 
 /*
-
 // TODO section pulled for now, too early to talk about this I feel
       <h2 className='mdc-typography--title'>We Launch new Businesses</h2>
       <p className='mdc-typography--body1'>
         We have a number of members who are equally interested in Entrepreneurship as they are in Technology.
-        Contribute to the innovation of these new ideas, and have the possibility to join the Start Up as it takes flight.
+        Contribute to the innovation of these new ideas, and have the possibility to join the Start Up as it
+        takes flight.
       </p>
-
 */
 export default HomeView

@@ -44,6 +44,8 @@ You should now have a server running on http://localhost:3000
 
 ```bash
 yarn run deploy:prod
+
+aws s3 sync ~/w/techcoop/techcoop.group/dist s3://techcoop.group --delete
 ```
 
 ### Globals
