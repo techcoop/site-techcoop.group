@@ -104,7 +104,7 @@ export const HomeView = () => (
 
       <h2 className='mdc-typography--title'>We Go to Meet Ups</h2>
       <p className='mdc-typography--body1'>
-        Occasionally it's useful to get off computer and talk to people and listen to presentations in live.
+        Occasionally it's useful to get off computer and talk to people and listen to presentations in real life.
         We attend a number of Technology and Business focused MeetUps regularly and are always advertising for
         the next one someone from the group will be attending.
       </p>
@@ -214,14 +214,14 @@ export const HomeView = () => (
       <h2 className='mdc-typography--title'>Mentors and Advice</h2>
       <p className='mdc-typography--body1'>
         Our members have years of experience working with various technologies on many different projects.  We
-        have expertise enough to spare and can offer both technology and career advice to our members. For also, from
-        time to time, find out things that you never knew existed.
+        have expertise enough to spare and can offer both technology and career advice to our members. Also, from
+        time to time, you will find out obscure and terrible things that you never knew existed.
       </p>
 
       <h2 className='mdc-typography--title'>Still not convinced?</h2>
       <p className='mdc-typography--body1'>
         We encourage you to come to one of the many MeetUps that we attend.  For now, contact
-        gagnon.colin at gmail.com to find out when the next event we will be at.
+        gagnon.colin at gmail.com to find out what the next event we will be attending is.
       </p>
 
     </div>
