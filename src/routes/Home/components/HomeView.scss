@@ -1,16 +1,24 @@
 .mission-card {
-  max-width:700px;
+  max-width:650px;
   margin-left:auto;
   margin-right:auto;
 }
 
 .mission-media {
-  background-image: url("./../assets/16-9.jpg");
+  background-image: url("./../assets/mission.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 6.313rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
+  background-position: center center;
+  height: 14rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
   font-weight:200;
   color:white;
+}
+
+.mission-text {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight:600;
+
 }
 
 .text-content {
@@ -21,12 +29,55 @@
 }
 
 .event-card {
+
 }
 
 .event-media {
   background-image: url("./../assets/1-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   height: 6.313rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
   font-weight:200;
+}
+
+.event-media h1 {
+  color: white;
+  font-size: 1.6em;
+}
+
+.prototype-challenge h1, .entrepenuer-journey h1, .golang-montreal h1 {
+  color: black;
+}
+
+.prototype-challenge {
+  background-image: url("./../assets/prototype-challenge.jpg");
+}
+
+.hackathon {
+  background-image: url("./../assets/hackathon.jpg");
+}
+
+.coding-sessions {
+  background-image: url("./../assets/coding-sessions.jpg");
+}
+
+.pitch-your-idea {
+  background-image: url("./../assets/pitch-your-idea.jpg");
+}
+
+.product-tank {
+  background-image: url("./../assets/product-tank.jpg");
+}
+
+.golang-montreal {
+  background-image: url("./../assets/golang-montreal.jpg");
+}
+
+.cto-team-lead {
+  background-image: url("./../assets/cto-team-lead.jpg");
+}
+
+.entrepenuer-journey {
+  background-image: url("./../assets/entrepenuer-journey.jpg");
 }

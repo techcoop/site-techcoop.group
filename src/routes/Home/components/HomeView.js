@@ -6,7 +6,9 @@ export const HomeView = () => (
   <main style={{ margin: '8px', marginTop: '25px' }}>
     <div className='mdc-card mission-card'>
       <section className='mdc-card__media mission-media'>
-        <h1 className='mdc-card__title mdc-card__title--large' style={{ color: '#FFFFFF' }}>Our Mission</h1>
+        <h1 className='mdc-card__title mdc-card__title--large mission-text'>
+          Our Mission
+        </h1>
       </section>
 
       <section className='mdc-card__supporting-text'>
@@ -23,7 +25,7 @@ export const HomeView = () => (
     </div>
 
     <div className='text-content'>
-      <h2 className='mdc-typography--title'>Planned events</h2>
+      <h2 className='mdc-typography--title'>Group Events</h2>
       <p className='mdc-typography--body1'>
         In order to always be improving in our craft, we plan and host various events that allow us to share the
         knowledge we get with others, while at the same time refining what we already know, and having some fun.
@@ -32,17 +34,17 @@ export const HomeView = () => (
       <div className='mdc-layout-grid'>
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
+            <section className='mdc-card__media event-media pitch-your-idea'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Prototype Challenge
+                Pitch your Idea
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
               <p>
-                Any member with an extremely complex problem can ask our group for possible solutions.  But sometimes
-                the efficiency in which a solution performs is more important than just something that works.  We set
-                a challenge to the group to submit the most efficient implementation and evaluate the benefits and
-                drawbacks of each implementation with benchmarks.
+                Great ideas need great technology. There is no better way to assess the technical feasibility
+                of any project, than by pitching an idea to our group. Brainstorming options for implementation,
+                potential pitfalls you might run into along the way, and even new opportunities for the idea can
+                come out of one of these live discussion sessions.
               </p>
             </section>
           </div>
@@ -50,9 +52,9 @@ export const HomeView = () => (
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
+            <section className='mdc-card__media event-media hackathon'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Hackathon
+                Hackathons
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
@@ -68,7 +70,7 @@ export const HomeView = () => (
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
+            <section className='mdc-card__media event-media coding-sessions'>
               <h1 className='mdc-card__title mdc-card__title--large'>
                 Coding Sessions
               </h1>
@@ -76,7 +78,7 @@ export const HomeView = () => (
             <section className='mdc-card__supporting-text'>
               <p>
                 Small group working sessions at any location are great for hacking on a side project with a second
-                pair of eyes to help with issues and bounce ideas off of each other.  Unlike Hackathons, these
+                pair of eyes to  and discuss ideas.  Unlike Hackathons, these
                 sessions can be for whatever, including "real work" for those with remote work options.
                </p>
             </section>
@@ -85,24 +87,24 @@ export const HomeView = () => (
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
+            <section className='mdc-card__media event-media prototype-challenge'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Pitch your Idea
+                Prototype Challenge
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
               <p>
-                Great ideas need great technology. There is no better way to assess the technical feasibility
-                of any project, than by pitching an idea to our group. Brainstorming options for implementation,
-                potential pitfalls you might run into along the way, and even new opportunities for the idea can
-                come out of one of these live discussion sessions.
+                Any member with an extremely complex problem can ask our group for possible solutions.  But sometimes
+                the efficiency in which a solution performs is more important than just something that works.  We set
+                a challenge to the group to submit the most efficient implementation and evaluate the benefits and
+                drawbacks of each implementation with benchmarks.
               </p>
             </section>
           </div>
         </div>
       </div>
 
-      <h2 className='mdc-typography--title'>We Go to Meet Ups</h2>
+      <h2 className='mdc-typography--title'>Networking Events</h2>
       <p className='mdc-typography--body1'>
         Occasionally it's useful to get off computer and talk to people and listen to presentations in real life.
         We attend a number of Technology and Business focused MeetUps regularly and are always advertising for
@@ -112,10 +114,7 @@ export const HomeView = () => (
       <div className='mdc-layout-grid max-width'>
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
-              <h1 className='mdc-card__title mdc-card__title--large'>
-                Product Tank Montreal
-              </h1>
+            <section className='mdc-card__media event-media product-tank'>
             </section>
             <section className='mdc-card__supporting-text'>
               <p>
@@ -134,7 +133,7 @@ export const HomeView = () => (
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
+            <section className='mdc-card__media event-media cto-team-lead'>
               <h1 className='mdc-card__title mdc-card__title--large'>
                 Montreal CTO and Lead Developers Meetup
               </h1>
@@ -156,9 +155,9 @@ export const HomeView = () => (
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
+            <section className='mdc-card__media event-media golang-montreal'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Golang Montreal
+                Golang<br />Montreal
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
@@ -177,7 +176,7 @@ export const HomeView = () => (
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
           <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media'>
+            <section className='mdc-card__media event-media entrepenuer-journey'>
               <h1 className='mdc-card__title mdc-card__title--large'>
                 The Entrepreneur's Journey
               </h1>
@@ -220,8 +219,8 @@ export const HomeView = () => (
 
       <h2 className='mdc-typography--title'>Still not convinced?</h2>
       <p className='mdc-typography--body1'>
-        We encourage you to come to one of the many MeetUps that we attend.  For now, contact
-        gagnon.colin at gmail.com to find out what the next event we will be attending is.
+        We encourage you to come to one of the many MeetUps that we attend and meet some of us.  For now, contact
+        colin at techcoop.group to find out what the next event we will be attending is.
       </p>
 
     </div>
