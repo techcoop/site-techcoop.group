@@ -1,35 +1,34 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Component } from 'react'
 import './Apply.scss'
 
 const formDomain = 'https://docs.google.com/forms/'
 const formUrl = formDomain + 'd/e/1FAIpQLSccXBwqFccJ-g_n9545FEomK0v8wXI0KNfgqnCgiI0LLtnYHg/viewform?embedded=true'
 
-export class Apply extends Component {
-  constructor(props) {
-    super(props);
-    this.updateDimensions = this.updateDimensions.bind(this);
+export class Apply extends React.Component {
+  constructor (props) {
+    super(props)
+    this.updateDimensions = this.updateDimensions.bind(this)
   }
 
   updateDimensions () {
-    var $this = ReactDOM.findDOMNode(this);
-    $this.height = window.document.documentElement.clientHeight - 70;
+    var $this = ReactDOM.findDOMNode(this)
+    $this.height = window.document.documentElement.clientHeight - 70
   }
 
   componentDidMount () {
-      this.updateDimensions();
-      window.addEventListener('resize', this.updateDimensions);
+    this.updateDimensions()
+    window.addEventListener('resize', this.updateDimensions)
   }
 
   componentWillUnmount () {
-      window.removeEventListener('resize', this.updateDimensions);
+    window.removeEventListener('resize', this.updateDimensions)
   }
 
   render () {
     return (
-        <iframe src={formUrl}
-          width='100%' frameBorder='0' marginHeight='0' marginWidth='0'>Loading...</iframe>
+      <iframe src={formUrl}
+        width='100%' frameBorder='0' marginHeight='0' marginWidth='0'>Loading...</iframe>
     )
   }
 }

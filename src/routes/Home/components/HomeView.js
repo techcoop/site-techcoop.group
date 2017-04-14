@@ -1,25 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router'
 import './HomeView.scss'
+import ProductTankImage from './../assets/product-tank.png'
+import GolangMontrealImage from './../assets/golang-montreal.png'
+// import MeetupImage from './../assets/meetup.png'
 
 export const HomeView = () => (
   <main style={{ margin: '8px', marginTop: '25px' }}>
     <div className='mdc-card mission-card'>
-      <section className='mdc-card__media mission-media'>
-        <h1 className='mdc-card__title mdc-card__title--large mission-text'>
-          Our Mission
+      <section className='mdc-card__media'>
+        <h1 className='mdc-card__title mdc-card__title--large'>
+          <i className='material-icons section-icon'>flag</i>
+          <span className='section-title'>Our Mission</span>
         </h1>
       </section>
 
       <section className='mdc-card__supporting-text'>
-        <p>
+        <p className='mission-quote'>
         "Establish a cooperative of experts to contribute to open source projects, exchange knowledge,
         and support the launch of new ideas."
        </p>
       </section>
       <section className='mdc-card__actions'>
         <Link to='/apply' activeClassName='route--active'>
-          <button className='mdc-button mdc-button--compact mdc-card__action'>Apply Today!</button>
+          <button className='mdc-button mdc-button--raised mdc-button--accent
+                             mdc-button--compact mdc-card__action'>Apply Today!</button>
         </Link>
       </section>
     </div>
@@ -33,10 +38,11 @@ export const HomeView = () => (
 
       <div className='mdc-layout-grid'>
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
-          <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media pitch-your-idea'>
+          <div className='mdc-card'>
+            <section className='mdc-card__media'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Pitch your Idea
+                <i className='material-icons section-icon'>lightbulb_outline</i>
+                <span className='section-title'>Pitch your Idea</span>
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
@@ -51,10 +57,11 @@ export const HomeView = () => (
         </div>
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
-          <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media hackathon'>
+          <div className='mdc-card'>
+            <section className='mdc-card__media'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Hackathons
+                <i className='material-icons section-icon'>developer_board</i>
+                <span className='section-title'>Hackathons</span>
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
@@ -69,10 +76,11 @@ export const HomeView = () => (
         </div>
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
-          <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media coding-sessions'>
+          <div className='mdc-card'>
+            <section className='mdc-card__media'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Coding Sessions
+                <i className='material-icons section-icon'>build</i>
+                <span className='section-title'>Coding Sessions</span>
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
@@ -86,10 +94,11 @@ export const HomeView = () => (
         </div>
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
-          <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media prototype-challenge'>
+          <div className='mdc-card'>
+            <section className='mdc-card__media'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Prototype Challenge
+                <i className='material-icons section-icon'>memory</i>
+                <span className='section-title'>Prototype Challenge</span>
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
@@ -113,9 +122,14 @@ export const HomeView = () => (
 
       <div className='mdc-layout-grid max-width'>
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
-          <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media product-tank'>
+          <div className='mdc-card'>
+            <section className='mdc-card__media'>
+              <h1 className='mdc-card__title mdc-card__title--large'>
+                <img src={ProductTankImage} className='section-image-icon' />
+                <span className='section-title'>PRODUCT tank</span>
+              </h1>
             </section>
+
             <section className='mdc-card__supporting-text'>
               <p>
                 Always has an interesting line up of StartUps talking about their product and technology, usually
@@ -132,32 +146,11 @@ export const HomeView = () => (
         </div>
 
         <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
-          <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media cto-team-lead'>
+          <div className='mdc-card'>
+            <section className='mdc-card__media'>
               <h1 className='mdc-card__title mdc-card__title--large'>
-                Montreal CTO and Lead Developers Meetup
-              </h1>
-            </section>
-            <section className='mdc-card__supporting-text'>
-              <p>
-                Great Meetup with Technology experts from around Montreal coming together to share war stories. This
-                group is not always just focused on the technology, but also on running technology companies and
-                managing teams.
-              </p>
-            </section>
-            <section className='mdc-card__actions'>
-              <Link to='https://www.meetup.com/Montreal-CTO-Meetup/' target='_blank'>
-                <button className='mdc-button mdc-button--compact mdc-card__action'>Details</button>
-              </Link>
-            </section>
-          </div>
-        </div>
-
-        <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
-          <div className='mdc-card event-card'>
-            <section className='mdc-card__media event-media golang-montreal'>
-              <h1 className='mdc-card__title mdc-card__title--large'>
-                Golang<br />Montreal
+                <img src={GolangMontrealImage} className='section-image-icon' />
+                <span className='section-title'>Golang Montreal</span>
               </h1>
             </section>
             <section className='mdc-card__supporting-text'>
@@ -190,6 +183,28 @@ export const HomeView = () => (
             </section>
             <section className='mdc-card__actions'>
               <Link to='https://www.meetup.com/The-Entrepreneurs-Journey/' target='_blank'>
+                <button className='mdc-button mdc-button--compact mdc-card__action'>Details</button>
+              </Link>
+            </section>
+          </div>
+        </div>
+
+        <div className='mdc-layout-grid__cell mdc-layout-grid__cell--span-6'>
+          <div className='mdc-card event-card'>
+            <section className='mdc-card__media event-media cto-team-lead'>
+              <h1 className='mdc-card__title mdc-card__title--large'>
+                CTO and Lead Developers
+              </h1>
+            </section>
+            <section className='mdc-card__supporting-text'>
+              <p>
+                Great Meetup with Technology experts from around Montreal coming together to share war stories. This
+                group is not always just focused on the technology, but also on running technology companies and
+                managing teams.
+              </p>
+            </section>
+            <section className='mdc-card__actions'>
+              <Link to='https://www.meetup.com/Montreal-CTO-Meetup/' target='_blank'>
                 <button className='mdc-button mdc-button--compact mdc-card__action'>Details</button>
               </Link>
             </section>

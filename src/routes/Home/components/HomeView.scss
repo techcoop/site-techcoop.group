@@ -1,15 +1,53 @@
+.section-icon {
+    background: #0d2235;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    padding-top:0.5rem;
+    padding-left:0.5rem;
+    font-size: 3rem;
+    color:white;
+}
+
+.section-image-icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.section-title{
+  position:absolute;
+  margin-top:1rem;
+  margin-left:1rem;
+}
+
+.text-content {
+  margin:8px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:8px;
+}
+
 .mission-card {
-  max-width:650px;
+  max-width:500px;
   margin-left:auto;
   margin-right:auto;
 }
+
+.mission-quote {
+  font-style: italic;
+  font-size:1.1em;
+}
+
+/*
+
 
 .mission-media {
   background-image: url("./../assets/mission.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 14rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
+  height: 14rem;
   font-weight:200;
   color:white;
 }
@@ -21,12 +59,10 @@
 
 }
 
-.text-content {
-  margin:8px;
-  max-width:700px;
-  margin-left:auto;
-  margin-right:auto;
-}
+
+
+
+
 
 .event-card {
 
@@ -37,7 +73,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 6.313rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
+  height: 6.313rem;
   font-weight:200;
 }
 
@@ -81,3 +117,4 @@
 .entrepenuer-journey {
   background-image: url("./../assets/entrepenuer-journey.jpg");
 }
+*/
