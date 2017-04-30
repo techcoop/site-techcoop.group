@@ -235,7 +235,7 @@ export const HomeView = () => (
 
     </div>
 
-    <footer style={ {margin: '10px'} }>
+    <footer style={{ margin: '10px' }}>
       <Caption>Copyright &copy; TechCoop 2017</Caption>
     </footer>
   </Content>
