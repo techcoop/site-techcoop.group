@@ -1,4 +1,5 @@
 import HomeRoute from 'routes/Home'
+import { Content } from 'react-mdc-web'
 
 describe('(Route) Home', () => {
   let _component
@@ -12,6 +13,6 @@ describe('(Route) Home', () => {
   })
 
   it('Should define a route component', () => {
-    expect(_component.type).to.equal('main')
+    expect(_component.type).to.equal(Content)
   })
 })
