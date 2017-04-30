@@ -12,7 +12,7 @@ export class Apply extends React.Component {
   }
 
   updateDimensions () {
-    var $this = ReactDOM.findDOMNode(this)
+    let $this = ReactDOM.findDOMNode(this)
     $this.height = window.document.documentElement.clientHeight - 70
   }
 
@@ -27,8 +27,15 @@ export class Apply extends React.Component {
 
   render () {
     return (
-      <iframe src={formUrl}
-        width='100%' frameBorder='0' marginHeight='0' marginWidth='0'>Loading...</iframe>
+      <iframe
+        src={formUrl}
+        width='100%'
+        frameBorder='0'
+        marginHeight='0'
+        marginWidth='0'
+      >
+        Loading...
+      </iframe>
     )
   }
 }

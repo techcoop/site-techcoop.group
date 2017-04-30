@@ -1,3 +1,32 @@
 .route--active {
   font-weight: bold;
+  border: 1px solid red;
+}
+
+/* TODO fix terrible hack for button text, not sure wby MDC is positioning it like this */
+.button-text {
+  margin-top:-5px;
+}
+
+.button-text button {
+
+}
+
+.logo-image {
+  position:absolute;
+  top:9px;
+  left:9px;
+  /*
+  top:5px;
+  left:5px;
+  */
+
+}
+
+@media (max-width: 599px) {
+  .logo-image {
+    position:absolute;
+    top:5px;
+    left:5px;
+  }
 }

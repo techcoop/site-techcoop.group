@@ -1,26 +1,31 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
+import { browserHistory, Link } from 'react-router'
+import { Button, Toolbar, ToolbarRow, ToolbarSection, ToolbarTitle } from 'react-mdc-web'
 import './Header.scss'
 import LogoImage from './logo.png'
 
-export const Header = () => (
-  <header className='mdc-toolbar mdc-toolbar--fixed' style={{ height: '65px', paddingTop: '15px' }}>
-    <div className='mdc-toolbar__row'>
-      <section className='mdc-toolbar__section mdc-toolbar__section--align-start'>
-        <IndexLink to='/' activeClassName='route--active'>
-          <img src={LogoImage} />
-        </IndexLink>
-      </section>
+// TODO make better solution for handling the link on the title, IndexLink messes with styling
+const titleClick = () => {
+  browserHistory.push('/')
+}
 
-      <section className='mdc-toolbar__section mdc-toolbar__section--align-end' role='toolbar'>
-        <Link to='/apply' activeClassName='route--active'>
-          <button className='mdc-button mdc-button--compact' style={{ color: '#e5e5e5' }}>
+export const Header = () => (
+  <Toolbar fixed>
+    <ToolbarRow>
+      <ToolbarSection align='start'>
+        <ToolbarTitle onClick={titleClick} style={{ cursor: 'pointer' }}>
+          <img src={LogoImage} className='logo-image' />
+        </ToolbarTitle>
+      </ToolbarSection>
+      <ToolbarSection align='end'>
+        <Link to='/apply' className='button-text'>
+          <Button primary compact className='mdc-theme--text-primary-on-primary'>
             Apply
-          </button>
+          </Button>
         </Link>
-      </section>
-    </div>
-  </header>
+      </ToolbarSection>
+    </ToolbarRow>
+  </Toolbar>
 )
 
 export default Header

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header'
 import './CoreLayout.scss'
+import 'material-components-web/dist/material-components-web.min.css'
 import '../../styles/core.scss'
 
 export const CoreLayout = ({ children }) => (
@@ -17,4 +18,3 @@ CoreLayout.propTypes = {
 }
 
 export default CoreLayout
-
