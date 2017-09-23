@@ -1,0 +1,5 @@
+import { Document } from 'json-google-docs'
+
+const content = new Document('https://script.googleusercontent.com/macros/echo?user_content_key=NVfG0BR4bpzn4B_GSoXnMzOCvMEo-b4jLJaIGSjAwkGk2LwT0QdzF4HgUZs2ypjIZ55XfYAGAL4KEdhRjtCCrJFVZzRJ6RLum5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnLd1x65xMrUd4kWJ7wGAxdxOschcJWqy_dmkCwagJSZQOLbmRbHajeRK7jWom-VxoOvlFWeK2glt&lib=MQIOYbA6JCJ3qik6k9TEJiRoYjyRuxRsI')
+
+export default content

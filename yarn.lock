@@ -3543,6 +3543,16 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
 
+json-google-docs-loader@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/json-google-docs-loader/-/json-google-docs-loader-0.1.0.tgz#d3c565dcc60f196236bae765a8941fa5e5b50ae3"
+  dependencies:
+    json-google-docs "^0.1.0"
+
+json-google-docs@^0.1.0, json-google-docs@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/json-google-docs/-/json-google-docs-0.1.2.tgz#3702e092025be5c51b591d1bdf7cd57660db4e66"
+
 json-loader@^0.5.4:
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/json-loader/-/json-loader-0.5.4.tgz#8baa1365a632f58a3c46d20175fc6002c96e37de"
