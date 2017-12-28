@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import {
   Content, Grid, Cell,
-  Title, Body1, Caption, Button,
+  Title, Subheading2, Body1, Caption, Button,
   Card, CardHeader, CardTitle, CardText, CardActions
 } from 'react-mdc-web'
 import './HomeView.scss'
@@ -20,8 +20,7 @@ export const HomeView = () => (
       </CardHeader>
       <CardText>
         <p className='mission-quote'>
-          "Establish a cooperative of experts to contribute to open source projects, exchange knowledge,
-          and support the launch of new ideas."
+          "To create a cooperative group of technology experts in order to benefit from each others' collective experience, share information and news, contribute to open source projects, and collaborate on various initiatives. "
         </p>
       </CardText>
       <CardActions>
@@ -30,6 +29,49 @@ export const HomeView = () => (
         </Link>
       </CardActions>
     </Card>
+
+    <div className='text-content'>
+      <Title>Goals</Title>
+      <Subheading2>Open source projects</Subheading2>
+      <Body1>
+        Create and maintain open source projects with a focus on automating the setup of commonly required technical components of a company (login, servers, processing, etc), built for developers, to reduce the cost of setup new projects and applications.
+      </Body1>
+
+      <Subheading2>Events and Hackathons</Subheading2>
+      <Body1>
+        Get together and hack out on a specific project the cooperative has prioritized and make a dent in the creation of a new open source asset.
+      </Body1>
+
+      <Subheading2>Slow Steady Growth</Subheading2>
+      <Body1>
+        Continue to add new members to the cooperative, at the rate of 1 to 2 people per month with varied skill sets amongst the members.
+      </Body1>
+
+      <Subheading2>Publish Technology Articles</Subheading2>
+      <Body1>
+        Creating articles around tech, development, management, etc.  and also promoting the projects we create within the cooperative to the public.
+      </Body1>
+
+      <Subheading2>Technology Founding</Subheading2>
+      <Body1>
+        Act as a technology partner in new startups using our open source projects with a goal of eventually supporting many per year with maximum use of automation.
+      </Body1>
+
+      <Subheading2>Technology Audits</Subheading2>
+      <Body1>
+        Look at the technology stack of a company as a group to determine it's viability and implementation quality in order to provide technology due diligence and consulting and advice as a service.
+      </Body1>
+
+      <Subheading2>Dividends</Subheading2>
+      <Body1>
+        Eventually, the payment of quarterly or monthly dividends, initially any income money will most likely be used for our own events and lunches.
+      </Body1>
+
+      <Subheading2>Fun</Subheading2>
+      <Body1>
+        There is also a decent chance that fun can also be had during the pursuit of all these goals.
+      </Body1>
+    </div>
 
     <div className='text-content'>
       <Title>Group Events</Title>
@@ -200,7 +242,7 @@ export const HomeView = () => (
               </p>
             </CardText>
             <CardActions>
-              <Link to='https://www.meetup.com/The-Entrepreneurs-Journey/' target='_blank'>
+              <Link to='https://www.meetup.com/en-AU/Montreal-CTO-Meetup/' target='_blank'>
                 <Button>Details</Button>
               </Link>
             </CardActions>
@@ -212,12 +254,6 @@ export const HomeView = () => (
       <Body1>
         Come join our slack channel where all sorts of weird and wonderful things are discussed. We even
         have our own "radio station" run by our resident troll that occasionally has a good song on it.
-      </Body1>
-
-      <Title>Contribute to Open Source</Title>
-      <Body1>
-        We have a number of project ideas brewing that we are planning to start work on soon.  Join us in contributing
-        back to the open source community we all benefit from.
       </Body1>
 
       <Title>Mentors and Advice</Title>
